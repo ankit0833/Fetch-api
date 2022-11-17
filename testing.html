@@ -13,28 +13,28 @@
 
     //xhttp method
 
-    //   function loaddata(){
-    //     var xhttp=new XMLHttpRequest();
-    //      xhttp.onreadystatechange=function(){
-    //         if(this.readyState==4 && this.status==200){
-    //           document.getElementById("demo").innerHTML=this.response;
-    //         }else if(this.readyState==4 && this.status==200){
-    //             document.getElementById("demo").innerHTML="File not found";
-    //         }
-    //      };  
-    //      xhttp.open("GET","readme.text",true);
-    //      xhttp.send();
-    //   }
+      function loaddata(){
+        var xhttp=new XMLHttpRequest();
+         xhttp.onreadystatechange=function(){
+            if(this.readyState==4 && this.status==200){
+              document.getElementById("demo").innerHTML=this.response;
+            }else if(this.readyState==4 && this.status==200){
+                document.getElementById("demo").innerHTML="File not found";
+            }
+         };  
+         xhttp.open("GET","readme.text",true);
+         xhttp.send();
+      }
 
-       //fetch method or Api
-      // fetch("https://jsonplaceholder.typicode.com/1users")
-      // .then((response)=>{
-      //       return response.json();
-      // }).then((data)=>{
-      //    console.log(data1)
-      // }).catch((error)=>{
-      //   document.write("cant fetch data")
-      // })
+       fetch method or Api
+      fetch("https://jsonplaceholder.typicode.com/1users")
+      .then((response)=>{
+            return response.json();
+      }).then((data)=>{
+         console.log(data1)
+      }).catch((error)=>{
+        document.write("cant fetch data")
+      })
 
      // fetch method post //
     fetch('https://jsonplaceholder.typicode.com/posts', {
